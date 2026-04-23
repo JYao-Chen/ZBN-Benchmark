@@ -14,13 +14,6 @@ ZBN-Benchmark/
 │   ├── evaluate.py              # 单个模型评估脚本
 │   ├── evaluate_multiple.py     # 多个模型对比评估脚本
 │   └── creat_openai_eval_async.py # 使用 OpenAI API 进行异步推理的示例脚本
-├── model_results/         # 各模型在本基准测试上的原始输出结果
-│   ├── Qwen2.5-72B/
-│   ├── QwQ-32B/
-│   ├── ... (其他模型结果)
-├── paper_figures/         # 论文中使用的相关数据分析配图
-│   ├── combined_direction_distributions.png
-│   ├── ... (其他图表)
 └── README.md              # 本说明文件
 ```
 
@@ -38,13 +31,6 @@ ZBN-Benchmark/
 *   `scripts/creat_openai_eval_async.py`: 提供了一个使用 OpenAI 异步 API 对 `data/questions.json` 进行推理的示例，可以根据需要修改以适配不同的模型或 API。
     **注意:** 此脚本需要通过命令行参数 `--api_key` 和 `--base_url` 提供有效的 OpenAI API 凭据。其他参数如模型名称、温度、并发数等也可通过命令行调整。
 
-## 模型结果
-
-*   `model_results/` 目录存放了不同模型在此基准上运行 `scripts/creat_openai_eval_async.py` 后生成的原始预测输出文件 (通常是 JSON 格式)。
-
-## 论文配图
-
-*   `paper_figures/` 目录包含与本基准测试相关的论文中使用的数据分析图表。
 
 ## 使用方法
 
